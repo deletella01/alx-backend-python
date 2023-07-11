@@ -1,0 +1,5 @@
+## Python - Async Comprehension
+
+Python 3.6 added the ability to create Asynchronous Comprehensions and Asynchronous Generators. You can read about asynchronous comprehension in [PEP 530](https://www.python.org/dev/peps/pep-0530/) while the asynchronous generators are described in PEP 525. The documentation states that you can now create asynchronous list, set and dict comprehensions and generator expressions. 
+If you look in PEP 530, you will see that it states the following: Asynchronous comprehensions are only allowed inside an async def function. Of course, you cannot put Pythons await in a comprehension either as that keyword is to be used only inside of an async def functions body.
+Creating an asynchronous list comprehension is quite a bit different than creating a regular list comprehension. As you can see, it takes a lot more code to make it work. Other than adding the ability to do more asynchronously out of the box, the new asynchronous generator is actually supposed to be 2x faster than an equivalent implemented as an asynchronous iterator according to PEP 525.
